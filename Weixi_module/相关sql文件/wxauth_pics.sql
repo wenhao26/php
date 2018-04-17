@@ -1,0 +1,51 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.2
+-- http://www.phpmyadmin.net
+-- 
+-- 主机: localhost
+-- 生成日期: 2017 年 10 月 17 日 14:23
+-- 服务器版本: 5.1.48
+-- PHP 版本: 5.3.8
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- 数据库: `qjy168`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `wxauth_pics`
+-- 
+
+CREATE TABLE `wxauth_pics` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID',
+  `img_path` varchar(255) NOT NULL COMMENT '图片的路径',
+  `create_time` int(11) NOT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`),
+  KEY `img_path` (`img_path`,`create_time`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='微信素材管理时的图片另存为素材库' AUTO_INCREMENT=19 ;
+
+-- 
+-- 导出表中的数据 `wxauth_pics`
+-- 
+
+INSERT INTO `wxauth_pics` VALUES (1, '2016/12/27/20161227115858271.jpg', 1482811138);
+INSERT INTO `wxauth_pics` VALUES (2, '2016/12/27/20161227115858374.jpg', 1482811138);
+INSERT INTO `wxauth_pics` VALUES (3, '2016/12/27/20161227134042216.png', 1482817242);
+INSERT INTO `wxauth_pics` VALUES (4, '2016/12/27/20161227135114461.jpg', 1482817874);
+INSERT INTO `wxauth_pics` VALUES (5, '2016/12/27/20161227135503119.png', 1482818103);
+INSERT INTO `wxauth_pics` VALUES (6, '2016/12/27/20161227135855178.png', 1482818335);
+INSERT INTO `wxauth_pics` VALUES (7, '2016/12/27/20161227140106142.png', 1482818466);
+INSERT INTO `wxauth_pics` VALUES (8, '2016/12/27/20161227140233814.jpg', 1482818553);
+INSERT INTO `wxauth_pics` VALUES (9, '2016/12/27/20161227140347965.jpg', 1482818627);
+INSERT INTO `wxauth_pics` VALUES (10, '2016/12/27/20161227140633835.jpg', 1482818793);
+INSERT INTO `wxauth_pics` VALUES (11, '2016/12/27/20161227140741662.jpg', 1482818861);
+INSERT INTO `wxauth_pics` VALUES (12, '2016/12/27/20161227140741531.jpg', 1482818862);
+INSERT INTO `wxauth_pics` VALUES (13, '2016/12/27/20161227141256327.jpg', 1482819176);
+INSERT INTO `wxauth_pics` VALUES (14, '2016/12/27/20161227141256616.jpg', 1482819176);
+INSERT INTO `wxauth_pics` VALUES (15, '2016/12/27/20161227141925485.png', 1482819565);
+INSERT INTO `wxauth_pics` VALUES (16, '2016/12/27/20161227141925192.png', 1482819565);
+INSERT INTO `wxauth_pics` VALUES (17, '2016/12/27/20161227141925784.png', 1482819565);
+INSERT INTO `wxauth_pics` VALUES (18, '2016/12/27/20161227141927520.png', 1482819567);
